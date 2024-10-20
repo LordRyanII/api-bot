@@ -2,12 +2,9 @@ import { Server, port } from './Configs/Server/server';
 import { appWhatsapp } from './Configs/whatsConnect/functionsWhatsApp';
 import { ImageResponse } from './Configs/Interfaces/interfaces';
 import { create, CreateOptions } from '@wppconnect-team/wppconnect';
-import puppeteer from 'puppeteer-extra';
+import puppeteer, { Browser } from 'puppeteer'; // Importando puppeteer diretamente
 import fs from 'fs';
 import path from 'path';
-
-// Definindo o caminho do Chrome
-const chromePath = '/opt/render/.cache/puppeteer/chrome/linux-130.0.6723.58/chrome-linux64/chrome';
 
 // Função para logar o conteúdo do diretório do Chrome
 function logChromeDirectory(directoryPath: string) {
@@ -24,9 +21,6 @@ function logChromeDirectory(directoryPath: string) {
     });
 }
 
-// Verificando o diretório onde o Chrome está localizado
-logChromeDirectory(path.dirname(chromePath));
-
 // Definindo as opções de criação
 const createOptions: CreateOptions = {
     session: 'sessionTeste',
@@ -42,31 +36,68 @@ const createOptions: CreateOptions = {
             type: matches[1],
             data: Buffer.from(matches[2], 'base64'),
         };
-
-        // Armazene ou utilize a resposta aqui
     },
     logQR: true,
     puppeteerOptions: {
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox'], // Argumentos para evitar problemas em ambientes restritos
-        executablePath: chromePath // Caminho fixo do Chrome/Chromium
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        executablePath: '', // Inicialmente vazio
     }
 };
 
-// Verificando se o caminho do Chrome/Chromium está correto
-if (createOptions.puppeteerOptions) {
-    console.log(`Usando o caminho do executável: ${createOptions.puppeteerOptions.executablePath}`);
-} else {
-    console.error('puppeteerOptions não está definido.');
+// Função para obter o caminho do executável do Chrome
+async function getChromeExecutablePath(): Promise<string> {
+    let browser: Browser | null = null;
+
+    try {
+        // Inicia o Puppeteer para baixar o Chrome
+        browser = await puppeteer.launch({
+            headless: true,
+            args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        });
+        const executablePath = browser.process()?.spawnfile; // Obtém o caminho do Chrome
+
+        if (!executablePath) {
+            throw new Error('O caminho do executável do Chrome não foi encontrado.');
+        }
+
+        console.log(`Caminho do executável encontrado: ${executablePath}`);
+        return executablePath;
+    } catch (error) {
+        console.error('Erro ao obter o caminho do Chrome:', error);
+        throw error; // Lança o erro para tratamento
+    } finally {
+        // Garante que o navegador seja fechado se foi aberto
+        if (browser) {
+            await browser.close();
+        }
+    }
 }
 
-Server.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+// Definindo o caminho do Chrome de forma assíncrona
+getChromeExecutablePath().then(executablePath => {
+    // Certificando-se de que puppeteerOptions está definido
+    if (createOptions.puppeteerOptions) {
+        createOptions.puppeteerOptions.executablePath = executablePath;
 
-    create(createOptions).then((client: any) => {
-        console.log('WPPConnect client initialized successfully:', client);
-        appWhatsapp(client);
-    }).catch((error: unknown) => {
-        console.error('Error initializing WPPConnect:', error);
-    });
+        // Log do diretório do Chrome
+        const chromeDir = path.dirname(executablePath);
+        logChromeDirectory(chromeDir);
+
+        // Iniciando o servidor
+        Server.listen(port, () => {
+            console.log(`Server is running on port ${port}`);
+
+            create(createOptions).then((client: any) => {
+                console.log('WPPConnect client initialized successfully:', client);
+                appWhatsapp(client);
+            }).catch((error: unknown) => {
+                console.error('Error initializing WPPConnect:', error);
+            });
+        });
+    } else {
+        console.error('puppeteerOptions is not defined.');
+    }
+}).catch(error => {
+    console.error('Erro ao obter o caminho do Chrome:', error);
 });
