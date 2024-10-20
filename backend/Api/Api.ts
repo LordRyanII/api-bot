@@ -27,12 +27,12 @@ const createOptions: CreateOptions = {
     puppeteerOptions: {
         headless: true,
         args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        executablePath: '/opt/render/.cache/puppeteer/chrome/linux-130.0.6723.58/chrome-linux64/chrome' // Caminho fixo do Chrome/Chromium
     }
 };
 
-// Logando o caminho do executável antes de inicializar o Puppeteer
-const executablePath = puppeteer.executablePath();
-console.log(`Puppeteer is using executable path: ${executablePath}`);
+// Verificando se o caminho do Chrome/Chromium está correto
+console.log(`Usando o caminho do executável: ${puppeteer.executablePath()}`);
 
 Server.listen(port, () => {
     console.log(`Server is running on port ${port}`);
