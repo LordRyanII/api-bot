@@ -1,23 +1,25 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "Api/Api.ts",
+  "main": "build/Api.js",
   "scripts": {
-    "start": "node Api/Api.ts",
-    "dev": "nodemon --watch 'Api/Api.ts'",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "npx puppeteer install"
+    "build": "tsc",
+    "start": "npm run build && node build/Api.js",
+    "dev": "nodemon --watch Api/**/*.ts --exec ts-node -r tsconfig-paths/register Api/Api.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@wppconnect-team/wppconnect": "^1.34.2",
     "backend": "file:",
     "express": "^4.21.0",
-    "puppeteer": "^22.8.2",
+    "puppeteer": "^20.0.0",
+    "puppeteer-core": "^20.0.0",
     "typescript": "^5.6.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
     "nodemon": "^3.1.7",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
   }
 }

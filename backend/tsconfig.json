@@ -9,5 +9,5 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["package.json", "./Api/**/*.ts", "express.d.ts"]
+  "include": ["./Api/**/*.ts"]
 }
