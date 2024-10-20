@@ -23,8 +23,7 @@ const functionsWhatsApp_1 = require("./functionsWhatsApp");
         args: ['--no-sandbox', '--disable-setuid-sandbox'], // Argumentos recomendados para evitar problemas de permissões
         headless: true, // Executa o Chromium no modo headless
     }
-})
-    .then((client) => {
+}).then((client) => {
     console.log(client);
     (0, functionsWhatsApp_1.appWhatsapp)(client);
 }) // Passa o cliente para manipulação

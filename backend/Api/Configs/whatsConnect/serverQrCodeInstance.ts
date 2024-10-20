@@ -31,10 +31,9 @@ create({
         args: ['--no-sandbox', '--disable-setuid-sandbox'], // Argumentos recomendados para evitar problemas de permissões
         headless: true, // Executa o Chromium no modo headless
     }
-})
-    .then((client: any) => {
+}).then((client: any) => {
         console.log(client);
-        appWhatsapp(client)
+        appWhatsapp(client);
     }) // Passa o cliente para manipulação
     .catch((error: any) => console.log(error));
 
