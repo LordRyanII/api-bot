@@ -7,7 +7,7 @@ import { create, CreateOptions } from '@wppconnect-team/wppconnect';
 const createOptions: CreateOptions = {
     session: 'sessionTeste',
     catchQR: (base64Qr: string, asciiQR: string) => {
-        console.log(asciiQR); // Log do QR code no terminal
+        console.log(asciiQR);
 
         const matches = base64Qr.match(/^data:([A-Za-z-+/]+);base64,(.+)$/);
         if (!matches || matches.length !== 3) {
@@ -16,15 +16,16 @@ const createOptions: CreateOptions = {
 
         const response: ImageResponse = {
             type: matches[1],
-            data: Buffer.from(matches[2], 'base64'), // Buffer correto
+            data: Buffer.from(matches[2], 'base64'),
         };
 
-        // Aqui você pode armazenar ou usar a resposta de alguma forma
+        // Armazene ou utilize a resposta aqui
     },
     logQR: true,
     puppeteerOptions: {
-        headless: true,  // Usando Chromium em headless mode
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],  // Argumentos necessários para execução no Render
+        headless: true,
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        executablePath: '/opt/render/.cache/puppeteer/chrome/linux-130.0.6723.58/chrome-linux64/chrome',  // Atualize este caminho
     }
 };
 
