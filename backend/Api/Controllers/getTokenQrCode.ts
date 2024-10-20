@@ -4,7 +4,7 @@ import { appWhatsapp } from '../Configs/whatsConnect/functionsWhatsApp';
 
 export const getQrCode = async (req: Request, res: Response) => {
     try {
-        // Cria a sessão do WhatsApp
+        // Cria a sessão do WhatsApp com o Chromium instalado
         create({
             session: 'sessionTeste',
             catchQR: (base64Qr: string, asciiQR: string) => {
@@ -16,9 +16,14 @@ export const getQrCode = async (req: Request, res: Response) => {
                     "message": "QR code gerado com sucesso",
                     "qrCode": base64Qr // Envia o QR code em base64
                 });
-
             },
             logQR: false, // Desativa o log gráfico do QR code
+
+            // Adicionando argumentos para o Puppeteer
+            puppeteerOptions: {
+                executablePath: '/usr/bin/chromium-browser', // Caminho para o Chromium no servidor
+                args: ['--no-sandbox', '--disable-setuid-sandbox'] // Argumentos recomendados para evitar problemas de permissões
+            }
         }).then(async (client: any) => {
             // Verifica se o cliente já está conectado
             const isConnected = await client.isConnected();
@@ -34,14 +39,13 @@ export const getQrCode = async (req: Request, res: Response) => {
                 console.log("Cliente não conectado, QR code gerado.");
             }
 
-        })
-            .catch((error: any) => {
-                console.log(error);
-                res.status(404).json({
-                    "status": "error",
-                    "message": "Erro ao verificar a conexão do cliente",
-                });
+        }).catch((error: any) => {
+            console.log(error);
+            res.status(404).json({
+                "status": "error",
+                "message": "Erro ao verificar a conexão do cliente",
             });
+        });
     } catch (error) {
         res.status(500).json({
             "status": "error",
