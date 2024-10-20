@@ -6,7 +6,8 @@
     "start": "node Api/Api.ts",
     "dev": "nodemon --watch 'Api/Api.ts'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "npx puppeteer browsers install chromium"
+    "install-deps": "apt-get update && apt-get install -y chromium-browser",
+    "postinstall": "npx puppeteer browsers install chrome"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "backend": "file:",
     "express": "^4.21.0",
     "puppeteer": "^20.0.0",
+    "puppeteer-core": "^20.0.0",
     "typescript": "^5.6.2"
   },
   "devDependencies": {
