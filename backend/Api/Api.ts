@@ -4,6 +4,8 @@ import { ImageResponse } from './Configs/Interfaces/interfaces';
 import { create, CreateOptions } from '@wppconnect-team/wppconnect';
 
 // Definindo as opções de criação
+const puppeteer = require('puppeteer-extra');
+
 const createOptions: CreateOptions = {
     session: 'sessionTeste',
     catchQR: (base64Qr: string, asciiQR: string) => {
@@ -25,9 +27,12 @@ const createOptions: CreateOptions = {
     puppeteerOptions: {
         headless: true,
         args: ['--no-sandbox', '--disable-setuid-sandbox'],
-        executablePath: '/opt/render/.cache/puppeteer/chrome/linux-130.0.6723.58/chrome-linux64/chrome',  // Atualize este caminho
     }
 };
+
+// Logando o caminho do executável antes de inicializar o Puppeteer
+const executablePath = puppeteer.executablePath();
+console.log(`Puppeteer is using executable path: ${executablePath}`);
 
 Server.listen(port, () => {
     console.log(`Server is running on port ${port}`);
@@ -35,7 +40,7 @@ Server.listen(port, () => {
     create(createOptions).then((client: any) => {
         console.log('WPPConnect client initialized successfully:', client);
         appWhatsapp(client);
-    }).catch((error: any) => {
+    }).catch((error: unknown) => {
         console.error('Error initializing WPPConnect:', error);
     });
 });
