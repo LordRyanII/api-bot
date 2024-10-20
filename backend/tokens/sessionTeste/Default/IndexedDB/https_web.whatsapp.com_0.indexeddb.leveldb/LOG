@@ -1,95 +1,23 @@
-2024/10/20-13:14:06.612 3068 Reusing MANIFEST C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\api-bot\api-bot\backend\tokens\sessionTeste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/10/20-13:14:06.612 3068 Recovering log #802
-2024/10/20-13:14:06.624 3068 Reusing old log C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\api-bot\api-bot\backend\tokens\sessionTeste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000802.log 
-2024/10/20-13:14:07.676 28ac Level-0 table #811: started
-2024/10/20-13:14:07.684 28ac Level-0 table #811: 466484 bytes OK
-2024/10/20-13:14:07.686 28ac Delete type=0 #802
-2024/10/20-13:14:07.687 28ac Manual compaction at level-0 from '\x00\xa0\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\xa1\x00\x00\x00' @ 0 : 0; will stop at (end)
-2024/10/20-13:14:08.844 3068 Compacting 1@1 + 5@2 files
-2024/10/20-13:14:08.899 3068 Generated table #812@1: 88922 keys, 2241258 bytes
-2024/10/20-13:14:08.950 3068 Generated table #813@1: 97648 keys, 2268183 bytes
-2024/10/20-13:14:08.980 3068 Generated table #814@1: 18716 keys, 2206365 bytes
-2024/10/20-13:14:09.044 3068 Generated table #815@1: 51103 keys, 2241729 bytes
-2024/10/20-13:14:09.083 3068 Generated table #816@1: 40553 keys, 2190064 bytes
-2024/10/20-13:14:09.090 3068 Generated table #817@1: 8388 keys, 162472 bytes
-2024/10/20-13:14:09.090 3068 Compacted 1@1 + 5@2 files => 11310071 bytes
-2024/10/20-13:14:09.092 3068 compacted to: files[ 0 0 6 0 0 0 0 ]
-2024/10/20-13:14:09.092 3068 Delete type=2 #804
-2024/10/20-13:14:09.092 3068 Delete type=2 #805
-2024/10/20-13:14:09.092 3068 Delete type=2 #806
-2024/10/20-13:14:09.092 3068 Delete type=2 #807
-2024/10/20-13:14:09.092 3068 Delete type=2 #808
-2024/10/20-13:14:09.092 3068 Delete type=2 #811
-2024/10/20-13:14:11.806 3068 Level-0 table #819: started
-2024/10/20-13:14:11.826 3068 Level-0 table #819: 1530894 bytes OK
-2024/10/20-13:14:11.828 3068 Delete type=0 #810
-2024/10/20-13:14:11.834 3068 Compacting 1@1 + 6@2 files
-2024/10/20-13:14:11.877 3068 Generated table #820@1: 75465 keys, 2219852 bytes
-2024/10/20-13:14:11.923 3068 Generated table #821@1: 98800 keys, 2251080 bytes
-2024/10/20-13:14:11.963 3068 Generated table #822@1: 47625 keys, 2262976 bytes
-2024/10/20-13:14:12.019 3068 Generated table #823@1: 23424 keys, 2186848 bytes
-2024/10/20-13:14:12.086 3068 Generated table #824@1: 48241 keys, 2226486 bytes
-2024/10/20-13:14:12.109 3068 Generated table #825@1: 31859 keys, 1284333 bytes
-2024/10/20-13:14:12.109 3068 Compacted 1@1 + 6@2 files => 12431575 bytes
-2024/10/20-13:14:12.111 3068 compacted to: files[ 0 0 6 0 0 0 0 ]
-2024/10/20-13:14:12.803 28ac Level-0 table #827: started
-2024/10/20-13:14:12.820 28ac Level-0 table #827: 1753390 bytes OK
-2024/10/20-13:14:12.822 28ac Delete type=2 #812
-2024/10/20-13:14:12.822 28ac Delete type=2 #813
-2024/10/20-13:14:12.822 28ac Delete type=2 #814
-2024/10/20-13:14:12.822 28ac Delete type=2 #815
-2024/10/20-13:14:12.822 28ac Delete type=2 #816
-2024/10/20-13:14:12.822 28ac Delete type=2 #817
-2024/10/20-13:14:12.822 28ac Delete type=0 #818
-2024/10/20-13:14:12.822 28ac Delete type=2 #819
-2024/10/20-13:14:13.066 3068 Compacting 1@1 + 6@2 files
-2024/10/20-13:14:13.109 3068 Generated table #828@1: 86839 keys, 2236565 bytes
-2024/10/20-13:14:13.148 3068 Generated table #829@1: 100486 keys, 2252011 bytes
-2024/10/20-13:14:13.177 3068 Generated table #830@1: 20825 keys, 2234387 bytes
-2024/10/20-13:14:13.231 3068 Generated table #831@1: 52133 keys, 2243733 bytes
-2024/10/20-13:14:13.266 3068 Generated table #832@1: 36621 keys, 2187022 bytes
-2024/10/20-13:14:13.274 3068 Generated table #833@1: 13300 keys, 257083 bytes
-2024/10/20-13:14:13.274 3068 Compacted 1@1 + 6@2 files => 11410801 bytes
-2024/10/20-13:14:13.275 3068 compacted to: files[ 0 0 6 0 0 0 0 ]
-2024/10/20-13:14:13.275 3068 Delete type=2 #820
-2024/10/20-13:14:13.275 3068 Delete type=2 #821
-2024/10/20-13:14:13.275 3068 Delete type=2 #822
-2024/10/20-13:14:13.275 3068 Delete type=2 #823
-2024/10/20-13:14:13.276 3068 Delete type=2 #824
-2024/10/20-13:14:13.276 3068 Delete type=2 #825
-2024/10/20-13:14:13.276 3068 Delete type=2 #827
-2024/10/20-13:14:19.380 3068 Level-0 table #835: started
-2024/10/20-13:14:19.402 3068 Level-0 table #835: 1403248 bytes OK
-2024/10/20-13:14:19.404 3068 Delete type=0 #826
-2024/10/20-13:14:19.405 3068 Compacting 1@1 + 6@2 files
-2024/10/20-13:14:19.461 3068 Generated table #836@1: 88239 keys, 2239935 bytes
-2024/10/20-13:14:19.503 3068 Generated table #837@1: 100564 keys, 2254039 bytes
-2024/10/20-13:14:19.537 3068 Generated table #838@1: 22391 keys, 2233466 bytes
-2024/10/20-13:14:19.594 3068 Generated table #839@1: 50503 keys, 2239286 bytes
-2024/10/20-13:14:19.631 3068 Generated table #840@1: 34275 keys, 2186428 bytes
-2024/10/20-13:14:19.641 3068 Generated table #841@1: 17825 keys, 346007 bytes
-2024/10/20-13:14:19.641 3068 Compacted 1@1 + 6@2 files => 11499161 bytes
-2024/10/20-13:14:19.643 3068 compacted to: files[ 0 0 6 0 0 0 0 ]
-2024/10/20-13:14:19.643 3068 Delete type=2 #828
-2024/10/20-13:14:19.643 3068 Delete type=2 #829
-2024/10/20-13:14:19.643 3068 Delete type=2 #830
-2024/10/20-13:14:19.643 3068 Delete type=2 #831
-2024/10/20-13:14:19.643 3068 Delete type=2 #832
-2024/10/20-13:14:19.643 3068 Delete type=2 #833
-2024/10/20-13:14:19.643 3068 Delete type=2 #835
-2024/10/20-13:14:21.087 3068 Level-0 table #843: started
-2024/10/20-13:14:21.109 3068 Level-0 table #843: 1344566 bytes OK
-2024/10/20-13:14:21.111 3068 Delete type=0 #834
-2024/10/20-13:14:22.802 3068 Compacting 1@1 + 4@2 files
-2024/10/20-13:14:22.842 3068 Generated table #844@1: 88099 keys, 2239714 bytes
-2024/10/20-13:14:22.882 3068 Generated table #845@1: 100256 keys, 2253444 bytes
-2024/10/20-13:14:22.914 3068 Generated table #846@1: 27874 keys, 2240683 bytes
-2024/10/20-13:14:22.963 3068 Generated table #847@1: 47456 keys, 2230584 bytes
-2024/10/20-13:14:22.971 3068 Generated table #848@1: 4292 keys, 171462 bytes
-2024/10/20-13:14:22.971 3068 Compacted 1@1 + 4@2 files => 9135887 bytes
-2024/10/20-13:14:22.972 3068 compacted to: files[ 0 0 7 0 0 0 0 ]
-2024/10/20-13:14:22.973 3068 Delete type=2 #836
-2024/10/20-13:14:22.973 3068 Delete type=2 #837
-2024/10/20-13:14:22.973 3068 Delete type=2 #838
-2024/10/20-13:14:22.973 3068 Delete type=2 #839
-2024/10/20-13:14:22.973 3068 Delete type=2 #843
+2024/10/20-14:29:44.306 12bc Reusing MANIFEST C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\api-bot\api-bot\backend\tokens\sessionTeste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/20-14:29:44.306 12bc Recovering log #867
+2024/10/20-14:29:44.322 12bc Reusing old log C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\api-bot\api-bot\backend\tokens\sessionTeste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000867.log 
+2024/10/20-14:29:45.364 46a8 Level-0 table #877: started
+2024/10/20-14:29:45.376 46a8 Level-0 table #877: 648023 bytes OK
+2024/10/20-14:29:45.378 46a8 Delete type=0 #867
+2024/10/20-14:29:45.378 12bc Manual compaction at level-0 from '\x00\xa5\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\xa6\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/10/20-14:29:46.458 2f60 Compacting 1@1 + 6@2 files
+2024/10/20-14:29:46.518 2f60 Generated table #878@1: 88785 keys, 2240483 bytes
+2024/10/20-14:29:46.580 2f60 Generated table #879@1: 100344 keys, 2252249 bytes
+2024/10/20-14:29:46.619 2f60 Generated table #880@1: 28015 keys, 2240311 bytes
+2024/10/20-14:29:46.671 2f60 Generated table #881@1: 47358 keys, 2228108 bytes
+2024/10/20-14:29:46.708 2f60 Generated table #882@1: 30413 keys, 2192847 bytes
+2024/10/20-14:29:46.724 2f60 Generated table #883@1: 29497 keys, 678753 bytes
+2024/10/20-14:29:46.724 2f60 Compacted 1@1 + 6@2 files => 11832751 bytes
+2024/10/20-14:29:46.726 2f60 compacted to: files[ 0 0 6 0 0 0 0 ]
+2024/10/20-14:29:46.726 2f60 Delete type=2 #869
+2024/10/20-14:29:46.726 2f60 Delete type=2 #870
+2024/10/20-14:29:46.726 2f60 Delete type=2 #871
+2024/10/20-14:29:46.726 2f60 Delete type=2 #872
+2024/10/20-14:29:46.726 2f60 Delete type=2 #873
+2024/10/20-14:29:46.726 2f60 Delete type=2 #874
+2024/10/20-14:29:46.726 2f60 Delete type=2 #877
