@@ -23,10 +23,8 @@ const createOptions: CreateOptions = {
     },
     logQR: true,
     puppeteerOptions: {
-        headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],
-        // O executablePath é opcional, comente ou remova se o Puppeteer fizer o download automático
-        // executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 
+        headless: true,  // Usando Chromium em headless mode
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],  // Argumentos necessários para execução no Render
     }
 };
 
