@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const server_1 = require("./Configs/Server/server");
 const functionsWhatsApp_1 = require("./Configs/whatsConnect/functionsWhatsApp");
 const wppconnect_1 = require("@wppconnect-team/wppconnect");
-const puppeteer_1 = __importDefault(require("puppeteer")); // Importando puppeteer diretamente
+const puppeteer_1 = __importDefault(require("puppeteer")); // Importando Browser de puppeteer
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
 // Função para logar o conteúdo do diretório do Chrome
@@ -50,16 +50,28 @@ const createOptions = {
     puppeteerOptions: {
         headless: true,
         args: ['--no-sandbox', '--disable-setuid-sandbox'],
-        executablePath: '', // Inicialmente vazio
+        executablePath: '' // Inicialmente vazio
     }
 };
+// Função para forçar a instalação do Chrome
+function installChrome() {
+    return __awaiter(this, void 0, void 0, function* () {
+        const puppeteer = require('puppeteer-extra');
+        yield puppeteer.launch({
+            args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        });
+        console.log('Instalação do Chrome concluída.');
+    });
+}
 // Função para obter o caminho do executável do Chrome
 function getChromeExecutablePath() {
     return __awaiter(this, void 0, void 0, function* () {
         var _a;
         let browser = null;
         try {
-            // Inicia o Puppeteer para baixar o Chrome
+            // Tente instalar o Chrome antes de obter o caminho
+            yield installChrome();
+            // Inicia o Puppeteer para obter o caminho do Chrome
             browser = yield puppeteer_1.default.launch({
                 headless: true,
                 args: ['--no-sandbox', '--disable-setuid-sandbox'],

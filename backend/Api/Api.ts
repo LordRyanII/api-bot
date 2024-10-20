@@ -2,7 +2,7 @@ import { Server, port } from './Configs/Server/server';
 import { appWhatsapp } from './Configs/whatsConnect/functionsWhatsApp';
 import { ImageResponse } from './Configs/Interfaces/interfaces';
 import { create, CreateOptions } from '@wppconnect-team/wppconnect';
-import puppeteer, { Browser } from 'puppeteer'; // Importando puppeteer diretamente
+import puppeteer, { Browser } from 'puppeteer'; // Importando Browser de puppeteer
 import fs from 'fs';
 import path from 'path';
 
@@ -41,16 +41,29 @@ const createOptions: CreateOptions = {
     puppeteerOptions: {
         headless: true,
         args: ['--no-sandbox', '--disable-setuid-sandbox'],
-        executablePath: '', // Inicialmente vazio
+        executablePath: '' // Inicialmente vazio
     }
 };
+
+// Função para forçar a instalação do Chrome
+async function installChrome(): Promise<void> {
+    const puppeteer = require('puppeteer-extra');
+    await puppeteer.launch({
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    });
+
+    console.log('Instalação do Chrome concluída.');
+}
 
 // Função para obter o caminho do executável do Chrome
 async function getChromeExecutablePath(): Promise<string> {
     let browser: Browser | null = null;
 
     try {
-        // Inicia o Puppeteer para baixar o Chrome
+        // Tente instalar o Chrome antes de obter o caminho
+        await installChrome();
+
+        // Inicia o Puppeteer para obter o caminho do Chrome
         browser = await puppeteer.launch({
             headless: true,
             args: ['--no-sandbox', '--disable-setuid-sandbox'],
