@@ -1,0 +1,21 @@
+2024/10/10-21:09:38.919 39b4 Reusing MANIFEST C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\backend\tokens\sessionTeste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/10-21:09:38.919 39b4 Recovering log #729
+2024/10/10-21:09:38.927 39b4 Reusing old log C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\backend\tokens\sessionTeste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000729.log 
+2024/10/10-21:09:39.945 39b4 Level-0 table #738: started
+2024/10/10-21:09:39.954 39b4 Level-0 table #738: 383098 bytes OK
+2024/10/10-21:09:39.956 39b4 Delete type=0 #729
+2024/10/10-21:09:39.957 39b4 Manual compaction at level-0 from '\x00\x9d\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x9e\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/10/10-21:09:40.895 218c Compacting 1@1 + 5@2 files
+2024/10/10-21:09:40.957 218c Generated table #739@1: 86367 keys, 2236008 bytes
+2024/10/10-21:09:41.001 218c Generated table #740@1: 86300 keys, 2285785 bytes
+2024/10/10-21:09:41.035 218c Generated table #741@1: 21812 keys, 2175852 bytes
+2024/10/10-21:09:41.091 218c Generated table #742@1: 53093 keys, 2236936 bytes
+2024/10/10-21:09:41.109 218c Generated table #743@1: 28852 keys, 1147134 bytes
+2024/10/10-21:09:41.109 218c Compacted 1@1 + 5@2 files => 10081715 bytes
+2024/10/10-21:09:41.111 218c compacted to: files[ 0 0 5 0 0 0 0 ]
+2024/10/10-21:09:41.111 218c Delete type=2 #731
+2024/10/10-21:09:41.111 218c Delete type=2 #732
+2024/10/10-21:09:41.111 218c Delete type=2 #733
+2024/10/10-21:09:41.111 218c Delete type=2 #734
+2024/10/10-21:09:41.111 218c Delete type=2 #735
+2024/10/10-21:09:41.111 218c Delete type=2 #738
