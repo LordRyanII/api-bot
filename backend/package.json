@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "build/Api.js",
   "scripts": {
+    "postinstall": "npx puppeteer install",
     "build": "tsc",
     "start": "npm run build && node build/Api.js",
     "dev": "nodemon --watch Api/**/*.ts --exec ts-node -r tsconfig-paths/register Api/Api.ts",
