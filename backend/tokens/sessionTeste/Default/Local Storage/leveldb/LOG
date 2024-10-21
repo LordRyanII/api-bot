@@ -1,3 +1,6 @@
-2024/10/20-14:48:39.283 35b0 Reusing MANIFEST C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\api-bot\api-bot\backend\tokens\sessionTeste\Default\Local Storage\leveldb/MANIFEST-000001
-2024/10/20-14:48:39.288 35b0 Recovering log #32
-2024/10/20-14:48:39.290 35b0 Reusing old log C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\api-bot\api-bot\backend\tokens\sessionTeste\Default\Local Storage\leveldb/000032.log 
+2024/10/20-19:12:49.690 4ed0 Reusing MANIFEST C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\api-bot\api-bot\backend\tokens\sessionTeste\Default\Local Storage\leveldb/MANIFEST-000001
+2024/10/20-19:12:49.694 4ed0 Recovering log #32
+2024/10/20-19:12:49.698 4ed0 Reusing old log C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\api-bot\api-bot\backend\tokens\sessionTeste\Default\Local Storage\leveldb/000032.log 
+2024/10/20-19:23:49.940 4ed8 Level-0 table #36: started
+2024/10/20-19:23:49.953 4ed8 Level-0 table #36: 13128 bytes OK
+2024/10/20-19:23:49.957 4ed8 Delete type=0 #32

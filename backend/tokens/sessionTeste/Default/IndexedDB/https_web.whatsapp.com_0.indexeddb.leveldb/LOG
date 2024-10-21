@@ -1,23 +1,100 @@
-2024/10/20-14:48:39.888 180c Reusing MANIFEST C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\api-bot\api-bot\backend\tokens\sessionTeste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/10/20-14:48:39.889 180c Recovering log #876
-2024/10/20-14:48:39.890 180c Reusing old log C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\api-bot\api-bot\backend\tokens\sessionTeste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000876.log 
-2024/10/20-14:48:40.910 362c Level-0 table #886: started
-2024/10/20-14:48:40.917 362c Level-0 table #886: 77562 bytes OK
-2024/10/20-14:48:40.919 362c Delete type=0 #876
-2024/10/20-14:48:40.919 180c Manual compaction at level-0 from '\x00\xa6\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\xa7\x00\x00\x00' @ 0 : 0; will stop at (end)
-2024/10/20-14:48:41.919 4460 Compacting 1@1 + 6@2 files
-2024/10/20-14:48:41.975 4460 Generated table #887@1: 88884 keys, 2241050 bytes
-2024/10/20-14:48:42.021 4460 Generated table #888@1: 100341 keys, 2252341 bytes
-2024/10/20-14:48:42.052 4460 Generated table #889@1: 28181 keys, 2241013 bytes
-2024/10/20-14:48:42.103 4460 Generated table #890@1: 47337 keys, 2227933 bytes
-2024/10/20-14:48:42.141 4460 Generated table #891@1: 30431 keys, 2193394 bytes
-2024/10/20-14:48:42.157 4460 Generated table #892@1: 29509 keys, 681469 bytes
-2024/10/20-14:48:42.157 4460 Compacted 1@1 + 6@2 files => 11837200 bytes
-2024/10/20-14:48:42.159 4460 compacted to: files[ 0 0 6 0 0 0 0 ]
-2024/10/20-14:48:42.159 4460 Delete type=2 #878
-2024/10/20-14:48:42.159 4460 Delete type=2 #879
-2024/10/20-14:48:42.159 4460 Delete type=2 #880
-2024/10/20-14:48:42.159 4460 Delete type=2 #881
-2024/10/20-14:48:42.159 4460 Delete type=2 #882
-2024/10/20-14:48:42.159 4460 Delete type=2 #883
-2024/10/20-14:48:42.159 4460 Delete type=2 #886
+2024/10/20-19:12:50.338 4da4 Reusing MANIFEST C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\api-bot\api-bot\backend\tokens\sessionTeste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/20-19:12:50.338 4da4 Recovering log #885
+2024/10/20-19:12:50.344 4da4 Reusing old log C:\Users\user\Documents\chatbotNode\Sistema-de-chatbots=wppconnect\api-bot\api-bot\backend\tokens\sessionTeste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000885.log 
+2024/10/20-19:12:51.371 4da4 Level-0 table #895: started
+2024/10/20-19:12:51.376 4da4 Level-0 table #895: 211258 bytes OK
+2024/10/20-19:12:51.379 4da4 Delete type=0 #885
+2024/10/20-19:12:51.379 4da4 Manual compaction at level-0 from '\x00\xa7\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\xa8\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/10/20-19:12:52.369 4dac Compacting 1@1 + 6@2 files
+2024/10/20-19:12:52.431 4dac Generated table #896@1: 89280 keys, 2241084 bytes
+2024/10/20-19:12:52.476 4dac Generated table #897@1: 100335 keys, 2252245 bytes
+2024/10/20-19:12:52.513 4dac Generated table #898@1: 28710 keys, 2244345 bytes
+2024/10/20-19:12:52.563 4dac Generated table #899@1: 47223 keys, 2227404 bytes
+2024/10/20-19:12:52.605 4dac Generated table #900@1: 30527 keys, 2195821 bytes
+2024/10/20-19:12:52.621 4dac Generated table #901@1: 29555 keys, 691690 bytes
+2024/10/20-19:12:52.621 4dac Compacted 1@1 + 6@2 files => 11852589 bytes
+2024/10/20-19:12:52.622 4dac compacted to: files[ 0 0 6 0 0 0 0 ]
+2024/10/20-19:12:52.623 4dac Delete type=2 #887
+2024/10/20-19:12:52.623 4dac Delete type=2 #888
+2024/10/20-19:12:52.623 4dac Delete type=2 #889
+2024/10/20-19:12:52.623 4dac Delete type=2 #890
+2024/10/20-19:12:52.623 4dac Delete type=2 #891
+2024/10/20-19:12:52.623 4dac Delete type=2 #892
+2024/10/20-19:12:52.623 4dac Delete type=2 #895
+2024/10/20-19:12:56.121 4dac Level-0 table #903: started
+2024/10/20-19:12:56.138 4dac Level-0 table #903: 1329514 bytes OK
+2024/10/20-19:12:56.141 4dac Delete type=0 #894
+2024/10/20-19:12:59.061 4dac Compacting 1@1 + 6@2 files
+2024/10/20-19:12:59.108 4dac Generated table #904@1: 87188 keys, 2238343 bytes
+2024/10/20-19:12:59.151 4dac Generated table #905@1: 100108 keys, 2253058 bytes
+2024/10/20-19:12:59.188 4dac Generated table #906@1: 34844 keys, 2250703 bytes
+2024/10/20-19:12:59.234 4dac Generated table #907@1: 28583 keys, 2200145 bytes
+2024/10/20-19:12:59.282 4dac Generated table #908@1: 49458 keys, 2226716 bytes
+2024/10/20-19:12:59.303 4dac Generated table #909@1: 31657 keys, 1300298 bytes
+2024/10/20-19:12:59.303 4dac Compacted 1@1 + 6@2 files => 12469263 bytes
+2024/10/20-19:12:59.305 4dac compacted to: files[ 0 0 6 0 0 0 0 ]
+2024/10/20-19:12:59.305 4dac Delete type=2 #896
+2024/10/20-19:12:59.305 4dac Delete type=2 #897
+2024/10/20-19:12:59.305 4dac Delete type=2 #898
+2024/10/20-19:12:59.305 4dac Delete type=2 #899
+2024/10/20-19:12:59.305 4dac Delete type=2 #900
+2024/10/20-19:12:59.305 4dac Delete type=2 #901
+2024/10/20-19:12:59.305 4dac Delete type=2 #903
+2024/10/20-19:13:04.603 4dac Level-0 table #911: started
+2024/10/20-19:13:04.624 4dac Level-0 table #911: 1353822 bytes OK
+2024/10/20-19:13:04.626 4dac Delete type=0 #902
+2024/10/20-19:13:05.588 4dac Compacting 1@1 + 6@2 files
+2024/10/20-19:13:05.634 4dac Generated table #912@1: 87570 keys, 2239978 bytes
+2024/10/20-19:13:05.689 4dac Generated table #913@1: 100003 keys, 2252231 bytes
+2024/10/20-19:13:05.735 4dac Generated table #914@1: 37152 keys, 2257489 bytes
+2024/10/20-19:13:05.776 4dac Generated table #915@1: 26625 keys, 2196640 bytes
+2024/10/20-19:13:05.825 4dac Generated table #916@1: 52142 keys, 2232311 bytes
+2024/10/20-19:13:05.850 4dac Generated table #917@1: 31728 keys, 1384781 bytes
+2024/10/20-19:13:05.850 4dac Compacted 1@1 + 6@2 files => 12563430 bytes
+2024/10/20-19:13:05.852 4dac compacted to: files[ 0 0 6 0 0 0 0 ]
+2024/10/20-19:13:05.853 4dac Delete type=2 #904
+2024/10/20-19:13:05.853 4dac Delete type=2 #905
+2024/10/20-19:13:05.853 4dac Delete type=2 #906
+2024/10/20-19:13:05.853 4dac Delete type=2 #907
+2024/10/20-19:13:05.853 4dac Delete type=2 #908
+2024/10/20-19:13:05.853 4dac Delete type=2 #909
+2024/10/20-19:13:05.853 4dac Delete type=2 #911
+2024/10/20-19:13:06.004 4dac Level-0 table #919: started
+2024/10/20-19:13:06.023 4dac Level-0 table #919: 1417245 bytes OK
+2024/10/20-19:13:06.026 4dac Delete type=0 #910
+2024/10/20-19:13:10.055 4dac Compacting 1@1 + 6@2 files
+2024/10/20-19:13:10.099 4dac Generated table #920@1: 89710 keys, 2242332 bytes
+2024/10/20-19:13:10.141 4dac Generated table #921@1: 100199 keys, 2253462 bytes
+2024/10/20-19:13:10.176 4dac Generated table #922@1: 36122 keys, 2249218 bytes
+2024/10/20-19:13:10.220 4dac Generated table #923@1: 26899 keys, 2197598 bytes
+2024/10/20-19:13:10.272 4dac Generated table #924@1: 52644 keys, 2233330 bytes
+2024/10/20-19:13:10.294 4dac Generated table #925@1: 31713 keys, 1387958 bytes
+2024/10/20-19:13:10.294 4dac Compacted 1@1 + 6@2 files => 12563898 bytes
+2024/10/20-19:13:10.296 4dac compacted to: files[ 0 0 6 0 0 0 0 ]
+2024/10/20-19:13:10.296 4dac Delete type=2 #912
+2024/10/20-19:13:10.297 4dac Delete type=2 #913
+2024/10/20-19:13:10.297 4dac Delete type=2 #914
+2024/10/20-19:13:10.297 4dac Delete type=2 #915
+2024/10/20-19:13:10.297 4dac Delete type=2 #916
+2024/10/20-19:13:10.297 4dac Delete type=2 #917
+2024/10/20-19:13:10.297 4dac Delete type=2 #919
+2024/10/20-19:17:53.392 4db0 Level-0 table #927: started
+2024/10/20-19:17:53.411 4db0 Level-0 table #927: 576514 bytes OK
+2024/10/20-19:17:53.413 4db0 Delete type=0 #918
+2024/10/20-19:17:53.414 4da4 Manual compaction at level-0 from '\x00\xa8\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\xa9\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/10/20-19:17:58.397 4db0 Compacting 1@1 + 6@2 files
+2024/10/20-19:17:58.462 4db0 Generated table #928@1: 89616 keys, 2240908 bytes
+2024/10/20-19:17:58.503 4db0 Generated table #929@1: 100168 keys, 2253225 bytes
+2024/10/20-19:17:58.536 4db0 Generated table #930@1: 36716 keys, 2256830 bytes
+2024/10/20-19:17:58.577 4db0 Generated table #931@1: 26621 keys, 2196755 bytes
+2024/10/20-19:17:58.630 4db0 Generated table #932@1: 56054 keys, 2245906 bytes
+2024/10/20-19:17:58.649 4db0 Generated table #933@1: 31908 keys, 1544023 bytes
+2024/10/20-19:17:58.649 4db0 Compacted 1@1 + 6@2 files => 12737647 bytes
+2024/10/20-19:17:58.650 4db0 compacted to: files[ 0 0 6 0 0 0 0 ]
+2024/10/20-19:17:58.651 4db0 Delete type=2 #920
+2024/10/20-19:17:58.651 4db0 Delete type=2 #921
+2024/10/20-19:17:58.651 4db0 Delete type=2 #922
+2024/10/20-19:17:58.651 4db0 Delete type=2 #923
+2024/10/20-19:17:58.651 4db0 Delete type=2 #924
+2024/10/20-19:17:58.651 4db0 Delete type=2 #925
+2024/10/20-19:17:58.651 4db0 Delete type=2 #927
