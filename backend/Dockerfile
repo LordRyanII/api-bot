@@ -8,13 +8,13 @@ RUN apt-get update && apt-get install -y chromium
 WORKDIR /project/backend
 
 # Copia os arquivos de configuração do projeto para o diretório backend
-COPY backend/package*.json ./
+COPY api-bot/backend/package*.json ./
 
 # Instala as dependências do projeto
 RUN npm install
 
 # Copia o restante dos arquivos do projeto para o diretório backend
-COPY ./backend .
+COPY api-bot/backend/ ./
 
 # Exponha a porta que seu aplicativo usará
 EXPOSE 3005
